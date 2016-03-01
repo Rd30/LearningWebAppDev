@@ -22,12 +22,12 @@ header{
   overflow: auto;
 }
 
-header h1{
+h1{
   float: left;
   width: 570px;
 }
 
-header nav{
+nav{
   float: right;
   width: 285px;
 }
@@ -61,7 +61,7 @@ main .input{
   padding: 10px 0;
 }
 
-main .subContLeft h2, main .subContLeft p, main .subContLeft h3{
+h2,p,h3{
   padding: 10px 0;
 }
 
