@@ -1,8 +1,14 @@
+// Client-side code
+/* jshint browser: true, jquery: true, curly: true, eqeqeq: true, forin: true, immed: true, indent: 4, latedef: true, newcap: true, nonew: true, quotmark: double, undef: true, unused: true, strict: true, trailing: true */
+
+// Server-side code
+/* jshint node: true, curly: true, eqeqeq: true, forin: true, immed: true, indent: 4, latedef: true, newcap: true, nonew: true, quotmark: double, undef: true, unused: true, strict: true, trailing: true */
+/*globals $:false,_:false*/
 var main = function(){
 
   var exercise1 = function (num) {
 
-    'use strict';
+    "use strict";
     var sum = 0;
     var avgSum = 0;
 
@@ -19,14 +25,14 @@ var main = function(){
 
   var exercise2 = function (largeNo) {
 
-    'use strict';
+    "use strict";
 
      return Math.max.apply(Math, largeNo);
   };
 
   var exercise3 = function (evenOdd) {
 
-  'use strict';
+  "use strict";
    var evenNo = [];
 
    for(var i = 0; i < evenOdd.length; i++){
@@ -46,7 +52,7 @@ var main = function(){
 
   var exercise4 = function (allEven) {
 
-  'use strict';
+  "use strict";
    var evenNo = [];
 
    for(var i = 0; i < allEven.length; i++){
@@ -66,7 +72,7 @@ var main = function(){
 
   var arrayContains = function (strArr, string) {
 
-    'use strict';
+    "use strict";
     if(strArr.indexOf(string) > -1){
       return true;
     }
@@ -78,7 +84,7 @@ var main = function(){
 
   var arrayContainsTwo = function  (strArr,string) {
 
-    'use strict';
+    "use strict";
 
     var count = 0;
     var x = false;
@@ -99,7 +105,7 @@ var main = function(){
 
   var arrayContainsThree = function  (strArr,string) {
 
-    'use strict';
+    "use strict";
 
     var count = 0;
     var y = false;
@@ -121,7 +127,7 @@ var main = function(){
 
   var arrayContainsNTimes = function  (strArr,string,num) {
 
-    'use strict';
+    "use strict";
 
     var count = 0;
     var z = false;
@@ -143,7 +149,7 @@ var main = function(){
 
 
 
-  $(".ex1 span").text(exercise1([1, 2, 3, 4, 5, 6]));
+  $(".ex1 span").text(exercise1([1, 2, 3, 4, 5, 6, 7]));
   $(".ex2 span").text(exercise2([145, 6, 10, 9]));
 
   if (exercise3([3, 7, 9, 5])) {
@@ -165,18 +171,18 @@ var main = function(){
 
   $(".underscore2 span").text(_.max([79, 2, 6, 8, 9, 34, 788], function (item) { return item; }));
 
-  if (_.find([3, 2, 9, 7], function (num) {return num % 2 == 0})) {
+  if (_.find([3, 2, 9, 7], function(num){return num % 2 == 0})){
      $(".underscore3 span").text("contain");
   } else {
      $(".underscore3 span").text("does not contain");
   }
 
-  if (_.every([2, 4, 6, 8], function (num) {return num % 2 == 0})) {
+  if (_.every([2, 4, 6, 8], function(num){return num % 2 == 0})){
      $(".underscore4 span").text("is");
   } else {
      $(".underscore4 span").text("is not");
   }
 
-}
+};
 
 $(document).ready(main);
