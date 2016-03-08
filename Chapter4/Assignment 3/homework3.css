@@ -1,0 +1,18 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+header,main,footer{
+  min-width: 855px;
+  padding:25px 0;
+}
+
+header .container, main .container, footer .container {
+  max-width: 855px;
+  margin: auto;
+}
+
+main .container {
+  padding : 10px 0px;
+}
